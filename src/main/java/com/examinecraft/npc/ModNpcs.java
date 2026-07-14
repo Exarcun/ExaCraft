@@ -45,7 +45,7 @@ public final class ModNpcs {
 			PROFILE_BY_TYPE.put(type, profile);
 			TYPES.put(profile, type);
 			FabricDefaultAttributeRegistry.register(type, CommunityNpcEntity.createAttributes());
-			ModItems.register(profile.id() + "_spawn_egg", Item::new,
+			ModItems.register(profile.id() + "_spawn_egg", net.minecraft.world.item.SpawnEggItem::new,
 					new Item.Properties().spawnEgg(type));
 		}
 	}
