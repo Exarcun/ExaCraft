@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:poppy",
+    "minecraft:poppy"
+  ],
+  "result": {
+    "id": "examinecraft:opium_potion"
+  }
+}

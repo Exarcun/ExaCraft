@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "examinecraft:perc_potion",
+    "examinecraft:opium_potion",
+    "examinecraft:hash_pipe",
+    "examinecraft:narcan_potion",
+    "examinecraft:salvia_divinorum",
+    "examinecraft:lsd_blotter",
+    "examinecraft:ket_vial",
+    "examinecraft:quaalude"
+  ],
+  "result": {
+    "id": "examinecraft:dmt"
+  }
+}

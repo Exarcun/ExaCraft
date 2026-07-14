@@ -8,5 +8,11 @@
 	"item.examinecraft.lexotan": "Lexotan",
 	"item.examinecraft.ket_vial": "Ket Vial",
 	"item.examinecraft.lsd_blotter": "LSD Blotter",
-	"item.examinecraft.hash_pipe": "Hash Pipe"
+	"item.examinecraft.hash_pipe": "Hash Pipe",
+	"item.examinecraft.perc_potion": "Perc Potion",
+	"item.examinecraft.opium_potion": "Opium Potion",
+	"item.examinecraft.narcan_potion": "Narcan Potion",
+	"item.examinecraft.quaalude": "Quaalude",
+	"item.examinecraft.dmt": "DMT",
+	"item.examinecraft.grappling_hook": "Grappling Hook"
 }

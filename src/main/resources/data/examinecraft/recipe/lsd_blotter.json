@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:paper",
+    "examinecraft:opium_potion"
+  ],
+  "result": {
+    "count": 4,
+    "id": "examinecraft:lsd_blotter"
+  }
+}

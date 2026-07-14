@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:milk_bucket",
+    "minecraft:blue_dye"
+  ],
+  "result": {
+    "id": "examinecraft:narcan_potion"
+  }
+}

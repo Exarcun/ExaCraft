@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:gold_nugget",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "examinecraft:perc_potion"
+  }
+}

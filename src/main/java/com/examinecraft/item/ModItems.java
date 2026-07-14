@@ -60,6 +60,33 @@ public final class ModItems {
 	public static final Item HASH_PIPE = register("hash_pipe", HashPipeItem::new, smoked(
 			new MobEffectInstance(MobEffects.SPEED, 5 * MINUTES, 0)));
 
+	// --- Special items ---
+
+	public static final Item PERC_POTION = register("perc_potion",
+			p -> new DrugPotionItem(p, false, List.of(
+					new DrugPotionItem.EffectSpec(MobEffects.SLOWNESS, 2 * MINUTES, 0),
+					new DrugPotionItem.EffectSpec(MobEffects.REGENERATION, 2 * MINUTES, 1))),
+			new Item.Properties().stacksTo(16));
+
+	public static final Item OPIUM_POTION = register("opium_potion",
+			p -> new DrugPotionItem(p, false, List.of(
+					new DrugPotionItem.EffectSpec(MobEffects.SLOWNESS, 1 * MINUTES, 1),
+					new DrugPotionItem.EffectSpec(MobEffects.RESISTANCE, 1 * MINUTES, 4))),
+			new Item.Properties().stacksTo(16));
+
+	public static final Item NARCAN_POTION = register("narcan_potion",
+			p -> new DrugPotionItem(p, true, List.of()),
+			new Item.Properties().stacksTo(16));
+
+	public static final Item QUAALUDE = register("quaalude", QuaaludeItem::new, eaten());
+
+	public static final Item DMT = register("dmt", DmtItem::new, eaten(
+			new MobEffectInstance(MobEffects.NAUSEA, 1 * MINUTES, 0),
+			new MobEffectInstance(MobEffects.SLOW_FALLING, 1 * MINUTES, 0)));
+
+	public static final Item GRAPPLING_HOOK = register("grappling_hook", GrapplingHookItem::new,
+			new Item.Properties().stacksTo(1).useCooldown(1.5F));
+
 	// --- Helpers ---
 
 	private static Item.Properties eaten(MobEffectInstance... effects) {
