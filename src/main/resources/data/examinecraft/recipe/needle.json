@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:spider_eye",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "examinecraft:needle"
+  }
+}

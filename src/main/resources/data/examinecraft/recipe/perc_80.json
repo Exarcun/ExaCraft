@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "examinecraft:perc_20",
+    "examinecraft:perc_20",
+    "examinecraft:perc_20",
+    "examinecraft:perc_20"
+  ],
+  "result": {
+    "id": "examinecraft:perc_80"
+  }
+}

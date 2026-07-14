@@ -1,10 +1,14 @@
 # Placeholder texture generator for ExaMinecraft.
 # Generates 16x16 item textures into src/main/resources/assets/examinecraft/textures/item/
 # Re-run any time: python tools/gen_textures.py
-# All output PNGs are placeholders meant to be repainted by hand later.
+# Existing PNGs are SKIPPED so hand-painted art is never overwritten.
+# Use --force to regenerate everything from scratch.
 
 import os
+import sys
 from PIL import Image, ImageDraw
+
+FORCE = "--force" in sys.argv
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ITEM_DIR = os.path.join(ROOT, "src", "main", "resources", "assets", "examinecraft", "textures", "item")
@@ -19,6 +23,8 @@ def new_canvas():
 def save(img, name):
     os.makedirs(ITEM_DIR, exist_ok=True)
     path = os.path.join(ITEM_DIR, name + ".png")
+    if os.path.exists(path) and not FORCE:
+        return
     img.save(path)
     print("wrote", path)
 
@@ -255,7 +261,87 @@ def pizza_slice():
     return img
 
 
+def pill_sword(main, accent):
+    """Diagonal sword whose blade is a stack of pills."""
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # handle bottom-left
+    d.line([(2, 13), (4, 11)], fill=(90, 60, 30, 255), width=2)
+    d.point((2, 14), fill=(60, 40, 20, 255))
+    # guard
+    d.line([(3, 9), (6, 12)], fill=(120, 120, 130, 255), width=2)
+    # pill blade
+    for i in range(4):
+        cx = 6 + i * 2
+        cy = 9 - i * 2
+        color = main if i % 2 == 0 else accent
+        d.ellipse([cx - 1, cy - 2, cx + 2, cy + 1], fill=color, outline=(50, 50, 50, 255))
+    return img
+
+
+def needle():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # syringe body diagonal
+    for i in range(6):
+        d.rectangle([4 + i, 10 - i, 5 + i, 11 - i], fill=(220, 230, 240, 255))
+    d.line([(5, 11), (9, 7)], fill=(120, 200, 120, 255))  # liquid line
+    # plunger
+    d.rectangle([2, 12, 4, 14], fill=(150, 150, 160, 255))
+    # needle tip
+    d.line([(10, 5), (14, 1)], fill=(160, 165, 175, 255))
+    return img
+
+
+def ket_pot():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # handle
+    d.line([(2, 13), (7, 8)], fill=(90, 60, 30, 255), width=2)
+    # pot at top right
+    d.rectangle([8, 2, 14, 8], fill=(140, 90, 60, 255), outline=(80, 50, 30, 255))
+    d.rectangle([9, 3, 13, 5], fill=(180, 200, 255, 255))  # ket inside
+    d.rectangle([8, 1, 14, 2], fill=(80, 50, 30, 255))  # rim
+    return img
+
+
+def golf_club():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # shaft diagonal
+    d.line([(3, 13), (12, 4)], fill=(160, 160, 170, 255), width=1)
+    d.line([(4, 13), (13, 4)], fill=(120, 120, 130, 255), width=1)
+    # grip
+    d.line([(11, 3), (13, 1)], fill=(40, 40, 45, 255), width=2)
+    # club head bottom-left
+    d.polygon([(1, 12), (5, 12), (6, 14), (1, 14)], fill=(190, 190, 200, 255), outline=(90, 90, 100, 255))
+    return img
+
+
+def baseball_bat():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    wood = (200, 150, 90, 255)
+    dark = (140, 100, 55, 255)
+    # thick barrel toward top-right, thin handle bottom-left
+    for i in range(11):
+        x = 2 + i
+        y = 13 - i
+        w = 1 if i < 4 else 2
+        d.ellipse([x - w, y - w, x + w, y + w], fill=wood)
+    d.ellipse([11, 0, 15, 4], fill=wood, outline=dark)
+    # grip knob
+    d.ellipse([1, 12, 4, 15], fill=dark)
+    return img
+
+
 ITEMS = {
+    "perc_20": lambda: pill_sword((250, 210, 60, 255), (255, 255, 255, 255)),
+    "perc_80": lambda: pill_sword((90, 200, 90, 255), (250, 210, 60, 255)),
+    "needle": needle,
+    "ket_pot": ket_pot,
+    "golf_club": golf_club,
+    "baseball_bat": baseball_bat,
     "joint": joint,
     "lexotan": lexotan,
     "ket_vial": ket_vial,

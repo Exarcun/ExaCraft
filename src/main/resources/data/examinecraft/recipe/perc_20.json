@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "g": "minecraft:gold_ingot",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "g",
+    "g",
+    "s"
+  ],
+  "result": {
+    "id": "examinecraft:perc_20"
+  }
+}

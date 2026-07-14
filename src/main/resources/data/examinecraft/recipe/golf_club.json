@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "  s",
+    " s ",
+    "i  "
+  ],
+  "result": {
+    "id": "examinecraft:golf_club"
+  }
+}

@@ -17,6 +17,7 @@ public class ExaMinecraft implements ModInitializer {
 		LOGGER.info("ExaMinecraft loading!");
 		com.examinecraft.entity.ModEntityTypes.initialize();
 		com.examinecraft.item.ModItems.initialize();
+		com.examinecraft.item.ModWeapons.initialize();
 		com.examinecraft.item.ModCreativeTab.initialize();
 		com.examinecraft.systems.TripManager.initialize();
 		com.examinecraft.systems.FallProtection.initialize();
