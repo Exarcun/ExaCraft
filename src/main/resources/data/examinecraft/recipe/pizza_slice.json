@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:bread",
+    "minecraft:cooked_porkchop",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "count": 3,
+    "id": "examinecraft:pizza_slice"
+  }
+}

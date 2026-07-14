@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:bread",
+    "examinecraft:salvia_divinorum",
+    "examinecraft:salvia_divinorum"
+  ],
+  "result": {
+    "id": "examinecraft:salvia_bread"
+  }
+}

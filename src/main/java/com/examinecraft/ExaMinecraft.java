@@ -15,6 +15,8 @@ public class ExaMinecraft implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("ExaMinecraft loading!");
+		com.examinecraft.item.ModItems.initialize();
+		com.examinecraft.item.ModCreativeTab.initialize();
 	}
 
 	public static Identifier id(String path) {

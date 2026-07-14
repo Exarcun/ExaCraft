@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:sugar",
+    "minecraft:white_dye"
+  ],
+  "result": {
+    "id": "examinecraft:ket_vial"
+  }
+}

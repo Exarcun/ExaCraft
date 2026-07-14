@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "s": "minecraft:stick",
+    "h": "examinecraft:salvia_divinorum",
+    "c": "minecraft:charcoal"
+  },
+  "pattern": [
+    "  h",
+    " sc",
+    "s  "
+  ],
+  "result": {
+    "id": "examinecraft:hash_pipe"
+  }
+}
