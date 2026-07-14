@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "examinecraft",
+	"version": "${version}",
+	"name": "ExaMinecraft",
+	"description": "Community mod for EddyCarisma's chat: community NPCs with trading, meme items, weapons and armor sets.",
+	"authors": [
+		"EddyCarisma Community"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/examinecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.examinecraft.ExaMinecraft"
+		],
+		"client": [
+			"com.examinecraft.client.ExaMinecraftClient"
+		]
+	},
+	"mixins": [
+		"examinecraft.mixins.json",
+		{
+			"config": "examinecraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
