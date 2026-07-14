@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:diamond_leggings",
+    "minecraft:red_dye",
+    "minecraft:yellow_dye",
+    "minecraft:lime_dye",
+    "minecraft:blue_dye"
+  ],
+  "result": {
+    "id": "examinecraft:gayman_leggings"
+  }
+}

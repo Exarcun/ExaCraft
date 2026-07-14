@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "m": "examinecraft:swiss_ingot"
+  },
+  "pattern": [
+    "m m",
+    "mmm",
+    "mmm"
+  ],
+  "result": {
+    "id": "examinecraft:swissman_chestplate"
+  }
+}

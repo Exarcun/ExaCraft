@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "m": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    "m m",
+    "mmm",
+    "mmm"
+  ],
+  "result": {
+    "id": "examinecraft:exa_chestplate"
+  }
+}

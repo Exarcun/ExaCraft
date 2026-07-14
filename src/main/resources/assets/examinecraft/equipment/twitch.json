@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:twitch"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:twitch"
+      }
+    ]
+  }
+}

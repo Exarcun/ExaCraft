@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:grilled_pizza"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:grilled_pizza"
+      }
+    ]
+  }
+}

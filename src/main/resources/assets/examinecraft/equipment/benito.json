@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:benito"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:benito"
+      }
+    ]
+  }
+}

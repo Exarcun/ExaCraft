@@ -18,6 +18,8 @@ public class ExaMinecraft implements ModInitializer {
 		com.examinecraft.entity.ModEntityTypes.initialize();
 		com.examinecraft.item.ModItems.initialize();
 		com.examinecraft.item.ModWeapons.initialize();
+		com.examinecraft.item.ModArmor.initialize();
+		com.examinecraft.systems.EquipmentBonuses.initialize();
 		com.examinecraft.item.ModCreativeTab.initialize();
 		com.examinecraft.systems.TripManager.initialize();
 		com.examinecraft.systems.FallProtection.initialize();

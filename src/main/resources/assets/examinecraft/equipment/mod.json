@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:mod"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:mod"
+      }
+    ]
+  }
+}

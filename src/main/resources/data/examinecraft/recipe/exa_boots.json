@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "m": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "result": {
+    "id": "examinecraft:exa_boots"
+  }
+}

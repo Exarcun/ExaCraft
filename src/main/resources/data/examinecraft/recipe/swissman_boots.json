@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "m": "examinecraft:swiss_ingot"
+  },
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "result": {
+    "id": "examinecraft:swissman_boots"
+  }
+}

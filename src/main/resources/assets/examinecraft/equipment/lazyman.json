@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:lazyman"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:lazyman"
+      }
+    ]
+  }
+}

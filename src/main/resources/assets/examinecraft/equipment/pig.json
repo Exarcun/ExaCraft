@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:pig"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:pig"
+      }
+    ]
+  }
+}

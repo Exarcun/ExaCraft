@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "examinecraft:gayman"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "examinecraft:gayman"
+      }
+    ]
+  }
+}
