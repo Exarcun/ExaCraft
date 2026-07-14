@@ -69,5 +69,21 @@
 	"item.examinecraft.grilled_pizza_helmet": "Grilled Pizza Helmet",
 	"item.examinecraft.grilled_pizza_chestplate": "Grilled Pizza Chestplate",
 	"item.examinecraft.grilled_pizza_leggings": "Grilled Pizza Leggings",
-	"item.examinecraft.grilled_pizza_boots": "Grilled Pizza Boots"
+	"item.examinecraft.grilled_pizza_boots": "Grilled Pizza Boots",
+	"entity.examinecraft.eddycarisma": "EddyCarisma",
+	"item.examinecraft.eddycarisma_spawn_egg": "EddyCarisma Spawn Egg",
+	"entity.examinecraft.exarobot": "Exarobot",
+	"item.examinecraft.exarobot_spawn_egg": "Exarobot Spawn Egg",
+	"entity.examinecraft.mali": "Mali",
+	"item.examinecraft.mali_spawn_egg": "Mali Spawn Egg",
+	"entity.examinecraft.sam": "Sam",
+	"item.examinecraft.sam_spawn_egg": "Sam Spawn Egg",
+	"entity.examinecraft.josh": "Josh",
+	"item.examinecraft.josh_spawn_egg": "Josh Spawn Egg",
+	"entity.examinecraft.dario": "Dario",
+	"item.examinecraft.dario_spawn_egg": "Dario Spawn Egg",
+	"entity.examinecraft.illy": "Illy",
+	"item.examinecraft.illy_spawn_egg": "Illy Spawn Egg",
+	"entity.examinecraft.pelisulpetto": "PeliSulPetto",
+	"item.examinecraft.pelisulpetto_spawn_egg": "PeliSulPetto Spawn Egg"
 }

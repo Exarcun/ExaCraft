@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "examinecraft:item/eddycarisma_spawn_egg"
+  }
+}

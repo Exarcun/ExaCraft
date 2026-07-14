@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "examinecraft:item/exarobot_spawn_egg"
+  }
+}
