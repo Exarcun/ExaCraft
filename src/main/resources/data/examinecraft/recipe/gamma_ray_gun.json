@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "e": "minecraft:emerald",
+    "i": "minecraft:iron_ingot",
+    "g": "minecraft:glowstone_dust",
+    "b": "minecraft:beacon"
+  },
+  "pattern": [
+    "iii",
+    "geb",
+    " i "
+  ],
+  "result": {
+    "id": "examinecraft:gamma_ray_gun"
+  }
+}

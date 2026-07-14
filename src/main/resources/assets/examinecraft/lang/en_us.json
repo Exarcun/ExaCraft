@@ -20,5 +20,14 @@
 	"item.examinecraft.needle": "Needle",
 	"item.examinecraft.ket_pot": "Ket Pot",
 	"item.examinecraft.golf_club": "Golf Club",
-	"item.examinecraft.baseball_bat": "Baseball Bat"
+	"item.examinecraft.baseball_bat": "Baseball Bat",
+	"item.examinecraft.uzi": "Uzi",
+	"item.examinecraft.sniper_rifle": "Sniper Rifle",
+	"item.examinecraft.gamma_ray_gun": "Gamma Ray Gun",
+	"item.examinecraft.ninja_star": "Ninja Star",
+	"item.examinecraft.bullet": "Bullet",
+	"entity.examinecraft.thrown_drug_potion": "Thrown Potion",
+	"entity.examinecraft.bullet": "Bullet",
+	"entity.examinecraft.ninja_star": "Ninja Star",
+	"entity.examinecraft.sniper_seat": "Sniper Stance"
 }

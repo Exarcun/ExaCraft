@@ -335,7 +335,82 @@ def baseball_bat():
     return img
 
 
+def uzi():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    metal = (70, 70, 80, 255)
+    dark = (40, 40, 48, 255)
+    # body horizontal
+    d.rectangle([2, 6, 13, 9], fill=metal, outline=dark)
+    # barrel
+    d.rectangle([13, 7, 15, 8], fill=dark)
+    # grip
+    d.rectangle([6, 9, 9, 14], fill=dark)
+    # magazine
+    d.rectangle([7, 9, 8, 13], fill=(90, 90, 100, 255))
+    # sight
+    d.rectangle([3, 5, 4, 6], fill=dark)
+    return img
+
+
+def sniper_rifle():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    metal = (60, 65, 70, 255)
+    wood = (110, 75, 45, 255)
+    # long barrel diagonal
+    d.line([(1, 14), (14, 1)], fill=metal, width=2)
+    # stock
+    d.polygon([(1, 12), (4, 12), (4, 15), (1, 15)], fill=wood)
+    # scope
+    d.rectangle([7, 5, 10, 7], fill=(30, 30, 35, 255))
+    d.point((8, 6), fill=(120, 200, 255, 255))
+    return img
+
+
+def gamma_ray_gun():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    body = (80, 120, 90, 255)
+    glow = (120, 255, 120, 255)
+    dark = (40, 60, 45, 255)
+    # bulky body
+    d.rectangle([2, 6, 11, 10], fill=body, outline=dark)
+    # emitter
+    d.rectangle([11, 7, 14, 9], fill=(50, 50, 55, 255))
+    d.point((15, 8), fill=glow)
+    # energy cell
+    d.rectangle([4, 7, 6, 9], fill=glow)
+    # grip
+    d.rectangle([5, 10, 8, 14], fill=dark)
+    return img
+
+
+def ninja_star():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    steel = (170, 175, 185, 255)
+    dark = (90, 95, 105, 255)
+    # 4-point star
+    d.polygon([(8, 1), (9, 7), (15, 8), (9, 9), (8, 15), (7, 9), (1, 8), (7, 7)], fill=steel, outline=dark)
+    d.ellipse([7, 7, 9, 9], fill=(50, 50, 55, 255))
+    return img
+
+
+def bullet():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    d.rectangle([6, 7, 9, 9], fill=(220, 180, 60, 255), outline=(140, 110, 30, 255))
+    d.point((10, 8), fill=(120, 120, 130, 255))
+    return img
+
+
 ITEMS = {
+    "uzi": uzi,
+    "sniper_rifle": sniper_rifle,
+    "gamma_ray_gun": gamma_ray_gun,
+    "ninja_star": ninja_star,
+    "bullet": bullet,
     "perc_20": lambda: pill_sword((250, 210, 60, 255), (255, 255, 255, 255)),
     "perc_80": lambda: pill_sword((90, 200, 90, 255), (250, 210, 60, 255)),
     "needle": needle,

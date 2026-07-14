@@ -48,6 +48,23 @@ public final class ModWeapons {
 	public static final Item BASEBALL_BAT = ModItems.register("baseball_bat", LauncherItem::new,
 			new Item.Properties().sword(ToolMaterial.IRON, 3.0F, -2.8F));
 
+	// --- Guns & ranged ---
+
+	public static final Item UZI = ModItems.register("uzi", UziItem::new,
+			new Item.Properties().stacksTo(1));
+
+	public static final Item SNIPER_RIFLE = ModItems.register("sniper_rifle", SniperRifleItem::new,
+			new Item.Properties().stacksTo(1));
+
+	public static final Item GAMMA_RAY_GUN = ModItems.register("gamma_ray_gun", GammaRayGunItem::new,
+			new Item.Properties().stacksTo(1));
+
+	public static final Item NINJA_STAR = ModItems.register("ninja_star", NinjaStarItem::new,
+			new Item.Properties().stacksTo(16));
+
+	/** Technical item: what the uzi bullet projectile renders as. Not craftable, not in the tab. */
+	public static final Item BULLET = ModItems.registerHidden("bullet", Item::new, new Item.Properties());
+
 	public static void initialize() {
 		// Forces static initialization.
 	}

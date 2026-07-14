@@ -21,6 +21,27 @@ public final class ModEntityTypes {
 					.clientTrackingRange(4)
 					.updateInterval(10));
 
+	public static final EntityType<BulletEntity> BULLET = register("bullet",
+			EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.15F, 0.15F)
+					.clientTrackingRange(4)
+					.updateInterval(10));
+
+	public static final EntityType<NinjaStarEntity> NINJA_STAR = register("ninja_star",
+			EntityType.Builder.<NinjaStarEntity>of(NinjaStarEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.25F, 0.25F)
+					.clientTrackingRange(4)
+					.updateInterval(10));
+
+	public static final EntityType<SniperSeatEntity> SNIPER_SEAT = register("sniper_seat",
+			EntityType.Builder.<SniperSeatEntity>of(SniperSeatEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.4F, 0.4F)
+					.clientTrackingRange(8)
+					.updateInterval(10));
+
 	private static <T extends Entity> EntityType<T> register(String name, EntityType.Builder<T> builder) {
 		ResourceKey<EntityType<?>> key = ResourceKey.create(Registries.ENTITY_TYPE, ExaMinecraft.id(name));
 		return Registry.register(BuiltInRegistries.ENTITY_TYPE, key, builder.build(key));

@@ -21,6 +21,7 @@ public class ExaMinecraft implements ModInitializer {
 		com.examinecraft.item.ModCreativeTab.initialize();
 		com.examinecraft.systems.TripManager.initialize();
 		com.examinecraft.systems.FallProtection.initialize();
+		com.examinecraft.net.ModNetworking.initialize();
 	}
 
 	public static Identifier id(String path) {

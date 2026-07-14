@@ -110,10 +110,16 @@ public final class ModItems {
 	}
 
 	public static <T extends Item> T register(String name, Function<Item.Properties, T> factory, Item.Properties properties) {
+		T item = registerHidden(name, factory, properties);
+		CREATIVE_TAB_ITEMS.add(item);
+		return item;
+	}
+
+	/** Registers without adding to the creative tab (e.g. technical items like the bullet). */
+	public static <T extends Item> T registerHidden(String name, Function<Item.Properties, T> factory, Item.Properties properties) {
 		ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, ExaMinecraft.id(name));
 		T item = factory.apply(properties.setId(key));
 		Registry.register(BuiltInRegistries.ITEM, key, item);
-		CREATIVE_TAB_ITEMS.add(item);
 		return item;
 	}
 
