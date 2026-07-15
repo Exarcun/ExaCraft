@@ -15,9 +15,13 @@ A community mod gifted to EddyCarisma's Twitch chat.
 - **12 items**: Perc / Opium / Narcan throwable potions, Hash Pipe, Joint,
   Lexotan, Ket Vial, LSD Blotter, Salvia (+ Salvia Bread), Quaalude (wolf pack,
   cap 5), DMT (craft it from the other 8 - full trip), Grappling Hook.
-- **10 weapons**: Perc 20 / Perc 80 (double reach), Needle (poison), Ket Pot,
+- **15 weapons**: Perc 20 / Perc 80 (double reach), Needle (poison), Ket Pot,
   Golf Club & Baseball Bat (send things flying), Uzi, Sniper Rifle (right-click
-  to anchor + zoom, left-click to fire), Gamma Ray Gun (beam), Ninja Star.
+  to anchor + zoom, left-click to fire), Gamma Ray Gun (beam), Ninja Star,
+  Casting Wand (lightning strike at your crosshair), Blink Crossbow (teleport
+  to wherever the bolt lands), Orbital Laser (paint a target, the beam drops
+  5 seconds later - big crater), Grilled Pizza (thrown, heals players it hits),
+  Tattoo Gun (close-range auto, inks targets with Wither).
 - **10 armor sets**: Swissman's (netherite, red), Benito's, Twitch, Mod's,
   Exa's (per-piece bonuses: speed boots, jump leggings, regen chest, 90%
   projectile-proof helmet), Pig's, Twitch Sub, Gayman's (rainbow), Lazyman's,
