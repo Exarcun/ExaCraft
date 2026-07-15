@@ -25,6 +25,7 @@ public class ExaMinecraft implements ModInitializer {
 		com.examinecraft.systems.TripManager.initialize();
 		com.examinecraft.systems.FallProtection.initialize();
 		com.examinecraft.net.ModNetworking.initialize();
+		com.examinecraft.command.ModCommands.initialize();
 	}
 
 	public static Identifier id(String path) {
