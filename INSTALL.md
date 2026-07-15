@@ -1,4 +1,4 @@
-# Installing ExaMinecraft (2 minutes)
+# Installing ExaCraft (2 minutes)
 
 You need three things: Fabric Loader, Fabric API, and the mod jar.
 
@@ -20,7 +20,7 @@ Put these two files into your `mods` folder
 ## 3. Play
 
 Start the launcher, select the **fabric-loader-26.2** profile, and join.
-You'll know it worked if you see the **ExaMinecraft** tab in the creative
+You'll know it worked if you see the **ExaCraft** tab in the creative
 inventory.
 
 ## Joining the community server

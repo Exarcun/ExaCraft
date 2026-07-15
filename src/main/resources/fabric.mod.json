@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "examinecraft",
 	"version": "${version}",
-	"name": "ExaMinecraft",
+	"name": "ExaCraft",
 	"description": "Community mod for EddyCarisma's chat: community NPCs with trading, meme items, weapons and armor sets.",
 	"authors": [
 		"EddyCarisma Community"

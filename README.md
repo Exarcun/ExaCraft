@@ -1,4 +1,4 @@
-# ExaMinecraft
+# ExaCraft
 
 A community mod gifted to EddyCarisma's Twitch chat.
 
@@ -27,7 +27,7 @@ A community mod gifted to EddyCarisma's Twitch chat.
   projectile-proof helmet), Pig's, Twitch Sub, Gayman's (rainbow), Lazyman's,
   Grilled Pizza.
 
-Everything lives in the **ExaMinecraft** creative tab and is craftable in
+Everything lives in the **ExaCraft** creative tab and is craftable in
 survival (most armor = vanilla piece + dye/ingredient in a crafting grid).
 
 ## Installing (players)
