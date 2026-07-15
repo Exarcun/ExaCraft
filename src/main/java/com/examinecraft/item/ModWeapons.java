@@ -62,6 +62,9 @@ public final class ModWeapons {
 	public static final Item NINJA_STAR = ModItems.register("ninja_star", NinjaStarItem::new,
 			new Item.Properties().stacksTo(16));
 
+	public static final Item GRILLED_PIZZA = ModItems.register("grilled_pizza", GrilledPizzaItem::new,
+			new Item.Properties().stacksTo(16));
+
 	/** Technical item: what the uzi bullet projectile renders as. Not craftable, not in the tab. */
 	public static final Item BULLET = ModItems.registerHidden("bullet", Item::new, new Item.Properties());
 

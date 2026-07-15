@@ -35,6 +35,13 @@ public final class ModEntityTypes {
 					.clientTrackingRange(4)
 					.updateInterval(10));
 
+	public static final EntityType<GrilledPizzaEntity> GRILLED_PIZZA = register("grilled_pizza",
+			EntityType.Builder.<GrilledPizzaEntity>of(GrilledPizzaEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.25F, 0.25F)
+					.clientTrackingRange(4)
+					.updateInterval(10));
+
 	public static final EntityType<SniperSeatEntity> SNIPER_SEAT = register("sniper_seat",
 			EntityType.Builder.<SniperSeatEntity>of(SniperSeatEntity::new, MobCategory.MISC)
 					.noLootTable()
