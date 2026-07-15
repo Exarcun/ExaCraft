@@ -1,5 +1,20 @@
 # Installing ExaCraft (2 minutes)
 
+## Easiest way: the one-click installer
+
+1. Start Minecraft (vanilla) once, then close it.
+2. Download the installer for your system from the
+   [`installer/`](installer/) folder of this repo:
+   - **Windows**: `install-windows.bat` + `install-windows.ps1`
+     (same folder), then double-click `install-windows.bat`.
+   - **Mac**: `install-mac.command`, then double-click it. If macOS
+     blocks it, right-click the file, choose **Open**, and confirm.
+3. The installer sets up Fabric and downloads everything into your
+   mods folder. When it says Done, open the launcher, pick the
+   **fabric-loader-26.2** profile, and play.
+
+## Manual way
+
 You need three things: Fabric Loader, Fabric API, and the mod jar.
 
 ## 1. Install Fabric Loader
