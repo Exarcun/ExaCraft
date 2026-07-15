@@ -17,6 +17,11 @@ if [ ! -d "$MINECRAFT" ]; then
     echo "Start Minecraft (vanilla) once, close it, then run this installer again."
     exit 1
 fi
+if [ ! -f "$MINECRAFT/launcher_profiles.json" ]; then
+    echo "Minecraft is installed but the launcher has never been run."
+    echo "Start Minecraft (vanilla) once, close it, then run this installer again."
+    exit 1
+fi
 
 # Find Java: PATH first, then the runtime bundled with the Minecraft launcher.
 JAVA=""

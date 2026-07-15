@@ -17,6 +17,11 @@ if (-not (Test-Path $minecraft)) {
     Write-Host 'Start Minecraft (vanilla) once, close it, then run this installer again.'
     exit 1
 }
+if (-not (Test-Path (Join-Path $minecraft 'launcher_profiles.json'))) {
+    Write-Host 'Minecraft is installed but the launcher has never been run.'
+    Write-Host 'Start Minecraft (vanilla) once, close it, then run this installer again.'
+    exit 1
+}
 
 function Find-Java {
     $cmd = Get-Command java -ErrorAction SilentlyContinue
