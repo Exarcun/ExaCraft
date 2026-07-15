@@ -49,6 +49,13 @@ public final class ModEntityTypes {
 					.clientTrackingRange(4)
 					.updateInterval(10));
 
+	public static final EntityType<OrbitalStrikeEntity> ORBITAL_STRIKE = register("orbital_strike",
+			EntityType.Builder.<OrbitalStrikeEntity>of(OrbitalStrikeEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.5F, 0.5F)
+					.clientTrackingRange(10)
+					.updateInterval(10));
+
 	public static final EntityType<SniperSeatEntity> SNIPER_SEAT = register("sniper_seat",
 			EntityType.Builder.<SniperSeatEntity>of(SniperSeatEntity::new, MobCategory.MISC)
 					.noLootTable()

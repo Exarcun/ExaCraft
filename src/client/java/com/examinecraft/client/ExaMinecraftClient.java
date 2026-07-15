@@ -22,6 +22,7 @@ public class ExaMinecraftClient implements ClientModInitializer {
 		EntityRenderers.register(ModEntityTypes.GRILLED_PIZZA, ThrownItemRenderer::new);
 		EntityRenderers.register(ModEntityTypes.BLINK_BOLT, ThrownItemRenderer::new);
 		EntityRenderers.register(ModEntityTypes.SNIPER_SEAT, NoopRenderer::new);
+		EntityRenderers.register(ModEntityTypes.ORBITAL_STRIKE, NoopRenderer::new);
 		com.examinecraft.npc.ModNpcs.TYPES.values()
 				.forEach(type -> EntityRenderers.register(type, NpcRenderer::new));
 
