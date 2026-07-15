@@ -71,6 +71,9 @@ public final class ModWeapons {
 	public static final Item BLINK_CROSSBOW = ModItems.register("blink_crossbow", BlinkCrossbowItem::new,
 			new Item.Properties().stacksTo(1));
 
+	public static final Item TATTOO_GUN = ModItems.register("tattoo_gun", TattooGunItem::new,
+			new Item.Properties().stacksTo(1));
+
 	/** Technical item: what the uzi bullet projectile renders as. Not craftable, not in the tab. */
 	public static final Item BULLET = ModItems.registerHidden("bullet", Item::new, new Item.Properties());
 
