@@ -24,6 +24,10 @@ HANDHELD = {
     "uzi",
     "sniper_rifle",
     "gamma_ray_gun",
+    "casting_wand",
+    "blink_crossbow",
+    "orbital_laser",
+    "tattoo_gun",
 }
 
 

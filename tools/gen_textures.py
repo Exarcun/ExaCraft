@@ -405,6 +405,76 @@ def bullet():
     return img
 
 
+def casting_wand():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # shaft
+    d.line([(3, 12), (11, 4)], fill=(101, 67, 33, 255), width=2)
+    # crystal tip
+    d.ellipse([9, 1, 14, 6], fill=(120, 200, 255, 255), outline=(40, 40, 40, 255))
+    d.point((11, 3), fill=(255, 255, 255, 255))
+    return img
+
+
+def blink_crossbow():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # stock
+    d.line([(2, 8), (13, 8)], fill=(101, 67, 33, 255), width=2)
+    # purple bow arms
+    d.arc([3, 2, 12, 13], 200, 340, fill=(150, 60, 200, 255), width=2)
+    # string / loaded bolt
+    d.line([(8, 3), (8, 12)], fill=(220, 220, 220, 255))
+    return img
+
+
+def orbital_laser():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # remote body
+    d.rectangle([4, 4, 11, 13], fill=(90, 90, 100, 255), outline=(40, 40, 40, 255))
+    # big red button
+    d.rectangle([6, 6, 9, 8], fill=(255, 40, 40, 255))
+    # antenna
+    d.line([(7, 1), (7, 4)], fill=(180, 180, 190, 255))
+    return img
+
+
+def grilled_pizza():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # crust
+    d.ellipse([2, 2, 13, 13], fill=(222, 170, 80, 255), outline=(120, 70, 20, 255))
+    # sauce
+    d.ellipse([4, 4, 11, 11], fill=(200, 60, 40, 255))
+    # cheese specks
+    d.point((6, 6), fill=(255, 230, 130, 255))
+    d.point((9, 8), fill=(255, 230, 130, 255))
+    d.point((7, 9), fill=(255, 230, 130, 255))
+    return img
+
+
+def tattoo_gun():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # machine body
+    d.rectangle([4, 5, 11, 9], fill=(60, 60, 70, 255), outline=(30, 30, 30, 255))
+    # needle
+    d.line([(11, 7), (14, 7)], fill=(200, 200, 210, 255))
+    # grip
+    d.rectangle([6, 9, 8, 13], fill=(60, 60, 70, 255))
+    return img
+
+
+def blink_bolt():
+    img = new_canvas()
+    d = ImageDraw.Draw(img)
+    # purple bolt
+    d.line([(4, 11), (11, 4)], fill=(150, 60, 200, 255), width=2)
+    d.point((12, 3), fill=(255, 255, 255, 255))
+    return img
+
+
 ITEMS = {
     "uzi": uzi,
     "sniper_rifle": sniper_rifle,
@@ -432,6 +502,12 @@ ITEMS = {
     "perc_potion": lambda: flask((250, 210, 60, 255)),
     "opium_potion": lambda: flask((90, 60, 30, 255)),
     "narcan_potion": lambda: flask((240, 245, 255, 255), label=(60, 100, 220, 255)),
+    "casting_wand": casting_wand,
+    "blink_crossbow": blink_crossbow,
+    "orbital_laser": orbital_laser,
+    "grilled_pizza": grilled_pizza,
+    "tattoo_gun": tattoo_gun,
+    "blink_bolt": blink_bolt,
 }
 
 

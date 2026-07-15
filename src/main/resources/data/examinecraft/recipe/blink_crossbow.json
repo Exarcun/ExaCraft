@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:crossbow",
+    "minecraft:ender_pearl",
+    "minecraft:ender_pearl"
+  ],
+  "result": {
+    "id": "examinecraft:blink_crossbow"
+  }
+}

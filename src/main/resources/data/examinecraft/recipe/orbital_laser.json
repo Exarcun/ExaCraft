@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "g": "minecraft:glowstone",
+    "i": "minecraft:iron_block",
+    "r": "minecraft:redstone_block",
+    "d": "minecraft:diamond_block"
+  },
+  "pattern": [
+    "ggg",
+    "idi",
+    "iri"
+  ],
+  "result": {
+    "id": "examinecraft:orbital_laser"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "examinecraft:pizza_slice",
+    "minecraft:coal"
+  ],
+  "result": {
+    "id": "examinecraft:grilled_pizza",
+    "count": 4
+  }
+}
