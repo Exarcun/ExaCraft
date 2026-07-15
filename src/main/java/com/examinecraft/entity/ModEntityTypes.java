@@ -42,6 +42,13 @@ public final class ModEntityTypes {
 					.clientTrackingRange(4)
 					.updateInterval(10));
 
+	public static final EntityType<BlinkBoltEntity> BLINK_BOLT = register("blink_bolt",
+			EntityType.Builder.<BlinkBoltEntity>of(BlinkBoltEntity::new, MobCategory.MISC)
+					.noLootTable()
+					.sized(0.15F, 0.15F)
+					.clientTrackingRange(4)
+					.updateInterval(10));
+
 	public static final EntityType<SniperSeatEntity> SNIPER_SEAT = register("sniper_seat",
 			EntityType.Builder.<SniperSeatEntity>of(SniperSeatEntity::new, MobCategory.MISC)
 					.noLootTable()

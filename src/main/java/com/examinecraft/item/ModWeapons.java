@@ -68,8 +68,14 @@ public final class ModWeapons {
 	public static final Item CASTING_WAND = ModItems.register("casting_wand", CastingWandItem::new,
 			new Item.Properties().stacksTo(1));
 
+	public static final Item BLINK_CROSSBOW = ModItems.register("blink_crossbow", BlinkCrossbowItem::new,
+			new Item.Properties().stacksTo(1));
+
 	/** Technical item: what the uzi bullet projectile renders as. Not craftable, not in the tab. */
 	public static final Item BULLET = ModItems.registerHidden("bullet", Item::new, new Item.Properties());
+
+	/** Technical item: what the blink bolt projectile renders as. Not craftable, not in the tab. */
+	public static final Item BLINK_BOLT = ModItems.registerHidden("blink_bolt", Item::new, new Item.Properties());
 
 	public static void initialize() {
 		// Forces static initialization.
