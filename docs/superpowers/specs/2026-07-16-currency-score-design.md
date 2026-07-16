@@ -83,8 +83,10 @@ rewarding spawn-camping).
 
 ### Display
 
-- Scoreboard objective `exa_score`, sidebar slot, showing only the **top 5** players.
-  The mod adds/removes entries itself so the sidebar never grows beyond 5.
+- Scoreboard objective `exa_score` in the **tab player list slot** (`DisplaySlot.LIST`):
+  scores show next to player names only while holding Tab — no permanent sidebar.
+  (Changed from sidebar top-5 after in-game review on 2026-07-16; the mod clears a
+  previously-claimed sidebar slot on start.)
 - Updated on every score change and on player join.
 - **Boss first-kills broadcast server-wide** (e.g. "Nico slew the Warden! +100").
   Milestone payouts message only the earner.

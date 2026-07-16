@@ -26,6 +26,9 @@ public class ExaMinecraft implements ModInitializer {
 		com.examinecraft.systems.FallProtection.initialize();
 		com.examinecraft.net.ModNetworking.initialize();
 		com.examinecraft.systems.PlayerHomes.initialize();
+		com.examinecraft.systems.PlayerScore.initialize();
+		com.examinecraft.systems.ScoreManager.initialize();
+		com.examinecraft.systems.ScoreEvents.initialize();
 		com.examinecraft.command.ModCommands.initialize();
 	}
 
