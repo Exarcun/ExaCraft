@@ -10,6 +10,10 @@ FABRIC_INSTALLER_URL="https://maven.fabricmc.net/net/fabricmc/fabric-installer/1
 FABRIC_API_URL="https://cdn.modrinth.com/data/P7dR8mSH/versions/Kr4WG5mG/fabric-api-0.154.2%2B26.2.jar"
 FABRIC_API_FILE="fabric-api-0.154.2+26.2.jar"
 MOD_URL="https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/exacraft-latest.jar"
+EASY_NPC_FILE="easy_npc-fabric-26.2-7.1.1.jar"
+EASY_NPC_URL="https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/$EASY_NPC_FILE"
+EASY_NPC_UI_FILE="easy_npc_config_ui-fabric-26.2-7.1.1.jar"
+EASY_NPC_UI_URL="https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/$EASY_NPC_UI_FILE"
 
 MINECRAFT="$HOME/Library/Application Support/minecraft"
 if [ ! -d "$MINECRAFT" ]; then
@@ -47,10 +51,16 @@ curl -fL -o "$TMP/fabric-installer.jar" "$FABRIC_INSTALLER_URL"
 MODS="$MINECRAFT/mods"
 mkdir -p "$MODS"
 
-echo "Step 2/3: Downloading Fabric API..."
+echo "Step 2/4: Downloading Fabric API..."
 curl -fL -o "$MODS/$FABRIC_API_FILE" "$FABRIC_API_URL"
 
-echo "Step 3/3: Downloading ExaCraft..."
+echo "Step 3/4: Downloading Easy NPC (required by the server)..."
+# Remove older copies so only one version loads.
+rm -f "$MODS"/easy_npc-*.jar "$MODS"/easy_npc_config_ui-*.jar
+curl -fL -o "$MODS/$EASY_NPC_FILE" "$EASY_NPC_URL"
+curl -fL -o "$MODS/$EASY_NPC_UI_FILE" "$EASY_NPC_UI_URL"
+
+echo "Step 4/4: Downloading ExaCraft..."
 # Remove older copies of the mod so only one version loads.
 rm -f "$MODS"/examinecraft-*.jar "$MODS"/exacraft-*.jar
 curl -fL -o "$MODS/exacraft-latest.jar" "$MOD_URL"

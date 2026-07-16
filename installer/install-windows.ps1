@@ -10,6 +10,10 @@ $FabricInstallerUrl = 'https://maven.fabricmc.net/net/fabricmc/fabric-installer/
 $FabricApiUrl = 'https://cdn.modrinth.com/data/P7dR8mSH/versions/Kr4WG5mG/fabric-api-0.154.2%2B26.2.jar'
 $FabricApiFile = 'fabric-api-0.154.2+26.2.jar'
 $ModUrl = 'https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/exacraft-latest.jar'
+$EasyNpcFile = 'easy_npc-fabric-26.2-7.1.1.jar'
+$EasyNpcUrl = "https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/$EasyNpcFile"
+$EasyNpcUiFile = 'easy_npc_config_ui-fabric-26.2-7.1.1.jar'
+$EasyNpcUiUrl = "https://raw.githubusercontent.com/Exarcun/ExaCraft/main/dist/$EasyNpcUiFile"
 
 $minecraft = Join-Path $env:APPDATA '.minecraft'
 if (-not (Test-Path $minecraft)) {
@@ -64,10 +68,17 @@ if ($LASTEXITCODE -ne 0) {
 $mods = Join-Path $minecraft 'mods'
 New-Item -ItemType Directory -Force $mods | Out-Null
 
-Write-Host 'Step 2/3: Downloading Fabric API...'
+Write-Host 'Step 2/4: Downloading Fabric API...'
 Invoke-WebRequest -UseBasicParsing $FabricApiUrl -OutFile (Join-Path $mods $FabricApiFile)
 
-Write-Host 'Step 3/3: Downloading ExaCraft...'
+Write-Host 'Step 3/4: Downloading Easy NPC (required by the server)...'
+# Remove older copies so only one version loads.
+Get-ChildItem $mods -Filter 'easy_npc-*.jar' -ErrorAction SilentlyContinue | Remove-Item -Force
+Get-ChildItem $mods -Filter 'easy_npc_config_ui-*.jar' -ErrorAction SilentlyContinue | Remove-Item -Force
+Invoke-WebRequest -UseBasicParsing $EasyNpcUrl -OutFile (Join-Path $mods $EasyNpcFile)
+Invoke-WebRequest -UseBasicParsing $EasyNpcUiUrl -OutFile (Join-Path $mods $EasyNpcUiFile)
+
+Write-Host 'Step 4/4: Downloading ExaCraft...'
 # Remove older copies of the mod so only one version loads.
 Get-ChildItem $mods -Filter 'examinecraft-*.jar' -ErrorAction SilentlyContinue | Remove-Item -Force
 Get-ChildItem $mods -Filter 'exacraft-*.jar' -ErrorAction SilentlyContinue | Remove-Item -Force
